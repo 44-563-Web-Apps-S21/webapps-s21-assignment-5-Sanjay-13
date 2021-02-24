@@ -9,10 +9,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
-      .img-responsive{
-          width: 100%;
+      .img-responsive, .img-thumbnail{
+          width: 30%;
           height: auto;
       }
+      .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color:lightpink;
+}
   </style>
 </head>
 <body>
@@ -46,6 +49,57 @@
     <img src="abelia.jpg" class="img-thumbnail" alt="Responsive image" width=450 height=450>
     <img src="nemesia.jpg" class="img-thumbnail" alt="Responsive image" width=450 height=450>  
 </div>
+<table class="table table-bordered table-striped table-hover table-condensed">
+    <caption style="caption-side: top;">Name Defines</caption>
+        <thead>
+            <tr>
+                <th scope="col">Letter</th>
+                <th scope="col">Plant</th>
+                <th scope="col">City</th>
+                <th scope="col">Food</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">S</th>
+                <td>Selinum</td>
+                <td>San Fransisco</td>
+                <td>Shrimp Popcorn</td>
+            </tr>
+            <tr>
+                <th scope="row">A</td>
+                <td>Abelia</td>
+                <td>Austin</td>
+                <td>AlmondPie</td>  
+            </tr>
+            <tr>
+                <th scope="row">N</th>
+                <td>Nemesia</td>
+                <td>New York</td>
+                <td>Nutella</td>  
+            </tr>
+            <tr>
+                <th scope="row">J</th>
+                <td>Jaborosa</td>
+                <td>Jamaica</td>
+                <td>Jack Fruit</td>  
+            </tr>
+            <tr>
+                <th scope="row">A</th>
+                <td>Abrus</td>
+                <td>Antartica</td>
+                <td>Apple</td>  
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Y</th>
+                <td>Yushania</td>
+                <td>Yorkshire</td>
+                <td>Yogurt</td>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
 </html>
