@@ -8,6 +8,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      .img-responsive{
+          width: 100%;
+          height: auto;
+      }
+  </style>
 </head>
 <body>
 <h1>Plants by Sanjay</h1>
@@ -28,10 +34,18 @@
         <div class="col-md">Abrus</div>
         <div class="col-md">Yushania</div>
     </div>
-    <p>The row with the Plant names break first because the share of width of md is 768px and if we reduce the size below that the row starts stacking up elements vertically.</p>
+    The row with the Plant names break first because the share of width of md is 768px and if we reduce the size below that the row starts stacking up elements vertically.
 </div>
-
-
+<div class = "images">
+    <img src="selinum.jpg" class="img-responsive" alt="Responsive image" width=450 height=450>
+    <img src="abelia.jpg" class="img-responsive" alt="Responsive image" width=450 height=450>
+    <img src="nemesia.jpg" class="img-responsive" alt="Responsive image" width=450 height=450>
+</div>
+<div class = "images">
+    <img src="selinum.jpg" class="img-thumbnail" alt="Responsive image" width=450 height=450>
+    <img src="abelia.jpg" class="img-thumbnail" alt="Responsive image" width=450 height=450>
+    <img src="nemesia.jpg" class="img-thumbnail" alt="Responsive image" width=450 height=450>  
+</div>
 
 </body>
 </html>
